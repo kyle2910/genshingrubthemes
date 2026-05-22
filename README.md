@@ -1,7 +1,21 @@
-# Honkai: Star Rail Grub Themes
-A pack of GRUB2 themes for Honkai: Star Rail
+# Genshin Impact Grub Themes
+A pack of GRUB2 themes for Genshin Impact
 
-![banner](/assets/images/icon.png?raw=true)
+![banner](/assets/images/banner.png?raw=true)
+
+
+## Notes:
+
+Hi, I'am Kyle
+
+I found the original project here:  
+[https://github.com/voidlhf/StarRailGrubThemes](https://github.com/voidlhf/StarRailGrubThemes)
+
+Since there was no Genshin Impact version, I forked the repository and created this project:  
+[https://github.com/kyle2910/GenshinGrubThemes](https://github.com/kyle2910/GenshinGrubThemes)
+
+Please note that the design files are created by the original author, not by me.  
+I only used her Figma design and existing theme structure as a base to create the Genshin Impact GRUB theme.
 
 ## Design File & Image Resources
 [Honkai: Star Rail Grub Theme Design File (Figma Design File)](https://www.figma.com/community/file/1354356022337074054/honkai-star-rail-grub-theme-design-file)
@@ -39,59 +53,6 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 6. Reboot the computer
 
-### For NixOS users
-For NixOS users, it was prepered packages and NixOS module to install theme
-#### With NixOS Module
-1. Added flake into your configuration
-```nix
-inputs.honkai-railway-grub-theme.url = "github:voidlhf/StarRailGrubThemes";
-```
-
-2. Added honkai-railway-grub-theme as NixOS Module
-```nix
-# your configuration.nix
-# ${system} - system architectuer e.g. x86_64-linux
-imports = [ home-inputs.honkai-railway-grub-theme.nixosModules.${system}.default ];
-```
-
-3. Set up theme in your configuration
-```nix
-honkai-railway-grub-theme = {
-    enable = true;
-    # Remember
-    # Theme name should have the same name as in assets/themes directory e.g. Dr.Ratio_cn is correct
-    # 'theme' field is optional. Default theme is Acheron.
-    theme = "RuanMei"; 
-};
-```
-#### Without NixOS module
-1. Added flake into your configuration
-```nix
-inputs.honkai-railway-grub-theme.url = "github:voidlhf/StarRailGrubThemes";
-```
-
-2. Added GRUB theme
-```nix
-boot.loader.grub = rec {
-    # Remember. Each nix package from this repo have another name.
-    # Packages name have 2 rules:
-    # - lower case names e.g. RuaMei -> ruamei
-    # - each '.' must be replaced by "_" e.g Dr.Ratio -> dr_ratio
-    theme = inputs.inputs.honkai-railway-grub-theme.packages.${system}.<your_theme_name>-grub-theme;
-    splashImage = "${theme}/background.png";
-};
-```
-
-3. Rebuild your system
-4. Reboot computer to see your theme :)
-
-## Preview
-![Evanescia](/preview/Evanescia.png)
-![SilverWolf-LV.999](/preview/SilverWolf-LV.999.png)
-![Ashveil](/preview/Ashveil.png)
-![Sparxie](/preview/Sparxie.png)
-![YaoGuang](/preview/YaoGuang.png)
-
-[More Preview Images](https://github.com/voidlhf/StarRailGrubThemes/tree/master/preview)
+---
 
 The labels in the bottom right corner of the preview image will not be displayed in the theme file.
