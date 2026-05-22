@@ -17,6 +17,8 @@ Since there was no Genshin Impact version, I forked the repository and created t
 Please note that the design files are created by the original author, not by me.  
 I only used her Figma design and existing theme structure as a base to create the Genshin Impact GRUB theme.
 
+Thanks [voidlhf](https://github.com/voidlhf/)
+
 ## Design File & Image Resources
 [Honkai: Star Rail Grub Theme Design File (Figma Design File)](https://www.figma.com/community/file/1354356022337074054/honkai-star-rail-grub-theme-design-file)
 
@@ -24,26 +26,26 @@ I only used her Figma design and existing theme structure as a base to create th
 
 
 ## Theme Description
-> Please access and download the required theme files from the **'Release'** assets of this project. The theme files containing **'cn'** in their filenames are intended for the Chinese version.
+> Please access and download the required theme files from the **'Release'** assets of this project.
 
 ## Installation
-Using the `Tribbie` theme as an example
+Using the `Kinich` theme as an example
 
 1. Download & Unzip
 
-2. Copy `Tribbie` into grub themes directory
+2. Copy `Kinich` into grub themes directory
 ```shell
-sudo cp -r Tribbie /usr/share/grub/themes/
+sudo cp -r Kinich /usr/share/grub/themes/
 ```
 
 3. Edit `grub` file
 ```shell
-sudo vim /etc/default/grub
+sudo nano /etc/default/grub
 ```
 
 4. Add the theme to the bottom of the text file
 ```shell
-GRUB_THEME="/usr/share/grub/themes/Tribbie/theme.txt"
+GRUB_THEME="/usr/share/grub/themes/Kinich/theme.txt"
 ```
 
 5. Update grub
