@@ -6,9 +6,7 @@ A pack of GRUB2 themes for Genshin Impact
 
 ## Notes:
 
-Hi, I'am Kyle
-
-I found the original project here:  
+Hi, I'am Kyle, I found the original project here:  
 [https://github.com/voidlhf/StarRailGrubThemes](https://github.com/voidlhf/StarRailGrubThemes)
 
 Since there was no Genshin Impact version, I forked the repository and created this project:  
