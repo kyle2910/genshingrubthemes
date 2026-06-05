@@ -2,7 +2,7 @@
 A pack of GRUB2 themes for Genshin Impact
 
 ![banner](preview/GenshinGrubThemes/Kinich.png)
-
+[Preview all themes](https://kylex.pages.dev/GenshinGrubThemes)
 
 ## Notes:
 
@@ -24,7 +24,7 @@ Thanks [voidlhf](https://github.com/voidlhf/)
 
 
 ## Theme Description
-> Please access and download the required theme files from the **'Release'** assets of this project.
+> [Preview all themes and download here](https://kylex.pages.dev/GenshinGrubThemes)
 
 ## Installation
 Using the `Kinich` theme as an example
