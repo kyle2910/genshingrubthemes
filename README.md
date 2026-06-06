@@ -1,7 +1,7 @@
 # Genshin Impact Grub Themes
 A pack of GRUB2 themes for Genshin Impact
 
-![banner](preview/GenshinGrubThemes/Kinich.png)
+![banner](preview/Kinich.png)
 [Preview all themes](https://kylex.pages.dev/GenshinGrubThemes)
 
 ## Notes:
